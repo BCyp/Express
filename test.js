@@ -1,19 +1,21 @@
-var express = require('express');
+var express = require('express'),
+    exphbs  = require('express3-handlebars');
 
 var app = express();
-var port = 3000;
-var path =require("path");
-var publicPath = path.resolve(__dirname, "views");
 
-var handlebars = require('express3-handlebars').create({defaultLayout:'main' });
-app.engine('handlebars', handlebars.engine);
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-app.use(express.static(publicPath));
-app.listen(port);
-console.log('Server started on port: ' + port);
-
-app.get('/', function(req, res){
-        res.render('index');
+app.get('/', function (req, res) {
+    res.render('index', {h1 : "Browser Test Page"});
+});
+app.get('/about', function (req, res) {
+    res.render('about', {h1 : "About"});
+});
+app.get('/404', function (req, res) {
+    res.render('404', {h1 : "404"});
 });
 
+app.use('/public', express.static('public'));
+console.log ("Starting sever : 3000");
+app.listen(3000);

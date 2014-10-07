@@ -1,0 +1,10 @@
+<html>
+<head><a href="http://localhost:3000/"> T index  </a> <a href="http://localhost:3000/about"> To About</head>
+<body>
+<h1> {{{h1}}} </h1>
+{{{body}}}
+
+</body>
+
+
+</html>
