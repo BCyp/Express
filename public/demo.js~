@@ -1,13 +1,8 @@
 var http = require('http'), fs = require ('fs');
 
-var port = 4500;
+var port = 3000;
 
 http.createServer(handleRequest).listen(port);
-
-var log = function(url, method, status){
-	var d = new Date();
-	console.log(d.toLocaleString() + " " + method + " " +  status + " " + url);
-}
 
 console.log('Starting server on Port: ' + port);
 function serveStatic(res, path, contentType, resCode) {
