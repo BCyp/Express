@@ -34,7 +34,7 @@ function handleRequest(req, res) {
 
 	}
 	else if( req.url === '/me'){
-		serveStatic(res, './public/301.html', 'text/html', 301);
+		serveStatic(res, './public/about.html', 'text/html', 301);
 		log(req.url, req.method, 301);
 
 	} 
@@ -48,7 +48,7 @@ function handleRequest(req, res) {
 		log(req.url, req.method, 200);
 
 	} 
-	else if( req.url === '/css/base.css' || req.url === '/css/base.css'){
+	else if( req.url === '/css/base.css' || req.url === '/css/base.css/'){
 		serveStatic( res, './public/css/base.css', 'text/css' , 200);
 		log(req.url, req.method, 200);
 
