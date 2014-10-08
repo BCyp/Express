@@ -1,0 +1,6 @@
+<pre>
+
+{{#each obj}}
+	 {{this}} 
+{{/each}}
+</pre>

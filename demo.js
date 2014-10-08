@@ -6,7 +6,7 @@ http.createServer(handleRequest).listen(port);
 
 var log = function(url, method, status){
 	var d = new Date();
-	console.log(d.toLocaleString() + " " + method + " " +  status + " " + url);
+	console.log(d.toLocaleString() + " " + method + " " + url + " "+  status );
 }
 
 console.log('Starting server on Port: ' + port);
@@ -34,7 +34,7 @@ function handleRequest(req, res) {
 
 	}
 	else if( req.url === '/me'){
-		serveStatic(res, './public/301', 'text/html', 301);
+		serveStatic(res, './public/301.html', 'text/html', 301);
 		log(req.url, req.method, 301);
 
 	} 

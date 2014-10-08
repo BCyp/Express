@@ -3,6 +3,6 @@
 <TITLE>301 Moved</TITLE></HEAD><BODY>
 <H1>301 Moved</H1>
 The document has moved
-<A HREF="http://localhost:4500/about">here</A>.
+<A HREF="/public/about.html">here</A>.
 </BODY></HTML>
 

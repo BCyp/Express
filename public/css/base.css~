@@ -1,0 +1,6 @@
+body{
+	vertical-align: center;
+	font-size: 1.5em;
+	font: arial, sans-serif;
+	background-color: #aaaaaa;
+}

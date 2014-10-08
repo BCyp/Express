@@ -1,0 +1,44 @@
+brando@UBox:~$ curl -I http://localhost:4500/
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Wed, 08 Oct 2014 01:15:48 GMT
+Connection: keep-alive
+
+brando@UBox:~$ curl -I http://localhost:4500/about
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Wed, 08 Oct 2014 01:15:52 GMT
+Connection: keep-alive
+
+brando@UBox:~$ curl -I http://localhost:4500/ABOUT
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Wed, 08 Oct 2014 01:15:58 GMT
+Connection: keep-alive
+
+brando@UBox:~$ curl -I http://localhost:4500/about/
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Wed, 08 Oct 2014 01:16:03 GMT
+Connection: keep-alive
+
+brando@UBox:~$ curl -I http://localhost:4500/me
+HTTP/1.1 301 Moved Permanently
+Content-Type: text/html
+Date: Wed, 08 Oct 2014 01:16:15 GMT
+Connection: keep-alive
+
+brando@UBox:~$ curl -I http://localhost:4500/css/base.css
+HTTP/1.1 200 OK
+Content-Type: text/css
+Date: Wed, 08 Oct 2014 01:16:37 GMT
+Connection: keep-alive
+
+brando@UBox:~$ curl -I http://localhost:4500/img/image1.png
+HTTP/1.1 200 OK
+Content-Type: image/png
+Date: Wed, 08 Oct 2014 01:16:48 GMT
+Connection: keep-alive
+
+brando@UBox:~$ 
+
